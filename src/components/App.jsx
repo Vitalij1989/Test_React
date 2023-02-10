@@ -1,5 +1,6 @@
 import { Section } from './Sectioin/Section';
 import { Title } from './Title/Title';
+import { friends } from '../data/index';
 
 export const App = () => {
   return (
@@ -14,7 +15,7 @@ export const App = () => {
     // }}
     >
       <Title />
-      <Section />
+      <Section friends={friends} />
       React homework template
     </div>
   );
