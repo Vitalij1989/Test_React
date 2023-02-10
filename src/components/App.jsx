@@ -1,22 +1,14 @@
 import { Section } from './Sectioin/Section';
 import { Title } from './Title/Title';
 import { friends } from '../data/index';
+import { Wrapper } from './App.styled';
 
 export const App = () => {
   return (
-    <div
-    // style={{
-    //   height: '100vh',
-    //   display: 'flex',
-    //   justifyContent: 'center',
-    //   alignItems: 'center',
-    //   fontSize: 40,
-    //   color: '#010101',
-    // }}
-    >
+    <Wrapper>
       <Title />
       <Section friends={friends} />
       React homework template
-    </div>
+    </Wrapper>
   );
 };
