@@ -1,14 +1,12 @@
-import { Section } from './Sectioin/Section';
-import { Title } from './Title/Title';
-import { friends } from '../data/index';
-import { Wrapper } from './App.styled';
+import { GlobalStyle } from './Global/global.styed';
+import { Wrapper } from './WrapperList/WrapperList.styled';
+import { Feedback } from './Feedback';
 
 export const App = () => {
   return (
     <Wrapper>
-      <Title />
-      <Section friends={friends} />
-      React homework template
+      <Feedback />
+      <GlobalStyle />
     </Wrapper>
   );
 };
